@@ -308,6 +308,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1235270802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9994dce1ce40c43448ee11e6ea0ea494, type: 3}
+  m_PrefabInstance: {fileID: 1356419471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1235270805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235270802}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab07b61b6b148540942899921a554ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  rotationSpeed: 100
+  force: 700
+  jumpForce: 700
+  gravity: 20
+  isGrounded: 0
+  isDef: 0
+  isDancing: 0
+  isWalking: 0
+--- !u!114 &1235270806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235270802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8426065fb0b1c439192a90b0c82675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  rotationSpeed: 100
+  force: 700
+  jumpForce: 700
+  gravity: 20
+  isGrounded: 0
+  isDef: 0
+  isDancing: 0
+  isWalking: 0
 --- !u!1001 &1356419471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -366,13 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 32752e6ae8dd7214484061303d1ba01b, type: 2}
     - target: {fileID: 5866666021909216657, guid: 9994dce1ce40c43448ee11e6ea0ea494, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandIndex1'\n\tTransform 'mixamorig:LeftHandPinky2'\n\tTransform
-        'mixamorig:RightHandRing2'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:RightArm'\n\tTransform
-        'mixamorig:LeftLeg'\n\tTransform 'mixamorig:LeftShoulder'\n\tTransform 'mixamorig:RightHandRing1'\n\tand
-        more ...\n\tFrom animation clip 'Idle'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 9994dce1ce40c43448ee11e6ea0ea494, type: 3}
       propertyPath: m_ApplyRootMotion
@@ -381,7 +422,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9994dce1ce40c43448ee11e6ea0ea494, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1235270805}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9994dce1ce40c43448ee11e6ea0ea494, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1235270806}
   m_SourcePrefab: {fileID: 100100000, guid: 9994dce1ce40c43448ee11e6ea0ea494, type: 3}
 --- !u!1 &1706639570
 GameObject:
